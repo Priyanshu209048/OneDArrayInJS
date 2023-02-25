@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let size = parseInt(prompt("Enter the size of an array: "));
+        var arr = [size];
+        for(let i=1; i<=size; i++){
+            arr[i] = parseInt(prompt("Enter the element of an array at " + i + ":"));
+        }
+
+        for(let i=1; i<=size; i++){
+            document.write("<li type=square>" + arr[i] + "</li>");
+        }
+        
+        for(let i=1; i<=size; i++){
+            document.write(i + ". " + arr[i] + "</br>");
+        }
+
+    </script>
+    
+</body>
+</html>
